@@ -13,7 +13,14 @@ with:
 
 ## Use from Javascript
 
-To use the plugin call cordova.plugins.appstorecheck
+If you are using jQuery, AngularJS, WinJS or any Promise/A library (Bluebird), promise style is supported. Use something like:
+````javascript
+    cordova.plugins.appstorecheck.isInstalledFromAppStore().then(function (installedFromAppStore) {
+        alert(installedFromAppStore);
+    });
+````
+
+If not, pass a callback function:
 ````javascript
 cordova.plugins.appstorecheck.isInstalledFromAppStore(function(installedFromAppStore) {
   alert(installedFromAppStore);
@@ -21,4 +28,4 @@ cordova.plugins.appstorecheck.isInstalledFromAppStore(function(installedFromAppS
 ````
 
 ### Output
-isInstalledFromAppStore() returns a string "true" if the app was installed from the google play store, otherwise "false".
+isInstalledFromAppStore() returns 1 if the app was installed from the google play store, otherwise 0.

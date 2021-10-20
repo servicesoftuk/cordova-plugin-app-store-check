@@ -13,5 +13,13 @@
     "cordova-android"
   ],
   "author": "Servicesoft",
-  "license": "ISC"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/servicesoftuk/cordova-plugin-app-store-check.git"
+  },
+  "homepage": "https://github.com/servicesoftuk/cordova-plugin-app-store-check#readme",
+  "bugs": {
+    "url": "https://github.com/servicesoftuk/cordova-plugin-app-store-check/issues"
+  }
 }

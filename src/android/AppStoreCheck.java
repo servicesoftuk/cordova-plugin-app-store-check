@@ -11,8 +11,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.*;
-// import java.util.ArrayList;
-// import java.util.List;
 
 /**
  * This class echoes a string called from JavaScript.
@@ -34,8 +32,8 @@ public class AppStoreCheck extends CordovaPlugin {
             // The package name of the app that has installed your app
             final String installer = context.getPackageManager().getInstallerPackageName(context.getPackageName());
         
-            callbackContext.success(Boolean.toString(installer != null && validInstallers.contains(installer)));
-            // true if your app has been downloaded from Play Store 
+			boolean result = installer != null && validInstallers.contains(installer);
+            callbackContext.success(result ? 1 : 0);           
 
 			return true;
 		}
