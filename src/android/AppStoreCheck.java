@@ -12,17 +12,9 @@ import org.json.JSONObject;
 
 import java.util.*;
 
-/**
- * This class echoes a string called from JavaScript.
- */
 public class AppStoreCheck extends CordovaPlugin {
-	CallbackContext _callbackContex;
-
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-		_callbackContex=callbackContext;
-		Context testParameter = (cordova.getActivity()).getBaseContext();
-
 		if (action.equals("isInstalledFromAppStore"))
 		{
 			Context context = this.cordova.getActivity().getApplicationContext();
