@@ -14,4 +14,14 @@
     <source-file src="src/android/AppStoreCheck.java" target-dir="src/uk/co/servicesoft/cordova" />
 	  <!-- <framework custom="true" src="src/android/android-play-core.gradle" type="gradleReference" />	 -->
   </platform>
+  <platform name="ios">
+    <plugins-plist key="AppStoreCheck" string="AppStoreCheck" />
+    <config-file target="config.xml" parent="/*">
+      <feature name="appstorecheck">
+          <param name="ios-package" value="AppStoreCheck" />
+      </feature>
+    </config-file>
+    <header-file src="src/ios/AppStoreCheck.h" />
+    <source-file src="src/ios/AppStoreCheck.m" />
+  </platform>
 </plugin>

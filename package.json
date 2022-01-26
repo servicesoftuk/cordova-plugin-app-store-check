@@ -1,16 +1,23 @@
 {
   "name": "cordova-plugin-app-store-check",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A plugin to determine whether an app was installed via an app store",
   "cordova": {
     "id": "cordova-plugin-app-store-check",
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ]
   },
   "keywords": [
     "ecosystem:cordova",
-    "cordova-android"
+    "cordova-android",
+    "cordova-ios",
+    "app",
+    "version",
+    "check",
+    "appversioncheck",
+    "plugin"
   ],
   "author": "Servicesoft",
   "license": "MIT",
